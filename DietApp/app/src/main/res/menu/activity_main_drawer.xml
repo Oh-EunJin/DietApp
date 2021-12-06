@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_calender"
+            android:icon="@android:drawable/ic_menu_month"
+            android:title="캘린더 보기" />
+        <item
+            android:id="@+id/nav_writing"
+            android:icon="@android:drawable/ic_menu_edit"
+            android:title="작성한 글 보기" />
+        <item
+            android:id="@+id/nav_food"
+            android:icon="@android:drawable/ic_menu_add"
+            android:title="음식추가" />
+        <item
+            android:id="@+id/nav_exercise"
+            android:icon="@android:drawable/ic_menu_add"
+            android:title="운동추가" />
+        <item
+            android:id="@+id/nav_inquiry"
+            android:icon="@android:drawable/ic_menu_help"
+            android:title="문의" />
+    </group>
+
+</menu>

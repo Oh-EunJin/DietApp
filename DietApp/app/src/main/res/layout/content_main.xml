@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <Button
+        android:id="@+id/comu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:padding="5dp"
+        android:text="커뮤니티 보기"
+        android:textSize="25dp"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/grape"
+        android:layout_width="350dp"
+        android:layout_height="177dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/comu"
+        app:layout_constraintTop_toBottomOf="@+id/comu"/>
+    <!--    <TextView-->
+    <!--        android:id="@+id/grape"-->
+    <!--        android:layout_width="350dp"-->
+    <!--        android:layout_height="177dp"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:background="#FAE0D4"-->
+    <!--        android:text="그래프 자리"-->
+    <!--        android:textSize="45dp"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/comu"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/comu"-->
+    <!--       />-->
+
+    <TextView
+        android:id="@+id/food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:padding="5dp"
+        android:text="오늘은 뭘 드셨나요?"
+        android:textSize="22dp"
+        app:layout_constraintStart_toStartOf="@+id/grape"
+        app:layout_constraintTop_toBottomOf="@+id/grape"
+         />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="326dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/food"
+        app:layout_constraintTop_toBottomOf="@+id/food"
+        app:srcCompat="@drawable/a" />
+
+    <TextView
+        android:id="@+id/exercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:padding="5dp"
+        android:text="오늘은 무슨 운동을 하셨나요?"
+        android:textSize="22dp"
+        app:layout_constraintStart_toStartOf="@+id/food"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="326dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/exercise"
+        app:layout_constraintTop_toBottomOf="@+id/exercise"
+        app:srcCompat="@drawable/a" />
+
+    <TextView
+        android:id="@+id/tvMeter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="25dp"
+        android:text="이곳은 걸음 수가 표시됩니다. : 0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton1" />
+</android.support.constraint.ConstraintLayout>
